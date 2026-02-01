@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Arif Sofi | Electrical Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ARIF<span>.SOFI</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Internships</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="badge-new fade-in">Electrical Engineer</div>
+                <h1 class="fade-in">Mohd Arif <span>Sofi</span></h1>
+                <p class="fade-in">
+                    Enthusiastic and detail-oriented Electrical Engineer with a strong foundation in circuit design, power systems, and control engineering. Skilled in MATLAB, AutoCAD, and Arduino for innovative electrical solutions.
+                </p>
+                <div class="social-hero fade-in">
+                    <a href="https://linkedin.com/in/mohd-arif-sofi-a116b7278" target="_blank" class="icon-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/theother_sufiii?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="profile-wrapper fade-in">
+                <div class="profile-card">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Mohd Arif Sofi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <span class="section-tag fade-in">The Journey</span>
+        <h2 class="section-title fade-in">Academic Background</h2>
+        <div class="edu-grid">
+            <div class="edu-card fade-in">
+                <div class="edu-date">2025 — 2028</div>
+                <h3>B.Tech in Electrical Engineering</h3>
+                <p>Annasaheb Dange College of Engineering and Technology</p>
+                <span class="edu-status">Currently Pursuing</span>
+            </div>
+            <div class="edu-card fade-in">
+                <div class="edu-date">2022 — 2025</div>
+                <h3>Diploma in Electrical Engineering</h3>
+                <p>Kashmir Government Polytechnic College, Srinagar</p>
+                <span class="edu-status">Completed</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <span class="section-tag fade-in">Expertise</span>
+        <h2 class="section-title fade-in">Technical Toolkit</h2>
+        <div class="skills-container fade-in">
+            <div class="skill-pill">MATLAB</div>
+            <div class="skill-pill">Simulink</div>
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">AutoCAD Electrical</div>
+            <div class="skill-pill">Network Analyzers</div>
+            <div class="skill-pill">AC/DC Machines</div>
+            <div class="skill-pill">Project Management</div>
+            <div class="skill-pill">Electrical Controls</div>
+            <div class="skill-pill">EV & Battery Management</div>
+            <div class="skill-pill">Microsoft Excel</div>
+            <div class="skill-pill">Communication</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <span class="section-tag fade-in">Field Work</span>
+        <h2 class="section-title fade-in">Industrial Internships</h2>
+        <div class="experience-grid">
+            <div class="exp-card fade-in">
+                <div class="exp-icon"><i class="fas fa-bolt"></i></div>
+                <h3>132/33 KV Grid Station</h3>
+                <p class="location">Rawalpora, Srinagar | 4 Weeks</p>
+                <p>Acquired valuable experience in operation and maintenance of the power system network of Kashmir.</p>
+            </div>
+            <div class="exp-card fade-in">
+                <div class="exp-icon"><i class="fas fa-car-battery"></i></div>
+                <h3>Electric Vehicle Training</h3>
+                <p class="location">KMTTML, Srinagar | 4 Weeks</p>
+                <p>Intensive industrial training focused on modern EV architecture and sustainable transport systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <span class="section-tag fade-in">Innovation</span>
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="project-columns">
+            <div class="p-card fade-in">
+                <div class="p-tag-red">The Problem</div>
+                <p>Grid stations face instability during overloads, wasting energy and stressing the system.</p>
+                <div class="p-tag-green">The Solution</div>
+                <p>Developed a system that stores overloaded power and utilizes it during power shortages or low-supply periods.</p>
+                <h3>Over Power Sharing on Grid Stations</h3>
+            </div>
+            <div class="p-card fade-in">
+                <div class="p-tag-red">The Problem</div>
+                <p>Manual street lights lead to high energy consumption during inactive hours.</p>
+                <div class="p-tag-green">The Solution</div>
+                <p>Used LDR sensors to detect movement; lights only activate when motion is sensed, saving energy when not needed.</p>
+                <h3>Automatic Street Lighting</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content fade-in">
+            <h2>Let's Connect</h2>
+            <div class="contact-links">
+                <a href="mailto:arifsofi795587@gmail.com"><i class="fas fa-envelope"></i> arifsofi795587@gmail.com</a>
+                                <a href="mailto:mohammadarif9541@gmail.com"><i class="fas fa-envelope"></i> mohammadarif9541@gmail.com</a>
+                
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/mohd-arif-sofi-a116b7278"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/theother_sufiii"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Mohd Arif Sofi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
